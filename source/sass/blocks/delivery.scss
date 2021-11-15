@@ -1,0 +1,180 @@
+.delivery {
+  text-align: left;
+  color: #2d3a4d;
+}
+
+.delivery__caption {
+  font-size: 36px;
+  line-height: 150%;
+  font-weight: bold;
+
+  @media (max-width: 890px) {
+    font-size: 30px;
+  }
+
+  &--card {
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    margin: 0;
+    margin-bottom: 45px;
+
+    @media (max-width: 890px) {
+      font-size: 26px;
+      padding-bottom: 18px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 18px;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    &::before {
+      @include pseudo;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #01c9f9;
+    }
+  }
+}
+
+.delivery__subcaption {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.delivery__cards {
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.delivery__card {
+  width: 48%;
+  padding: 20px 0 20px 25px;
+
+  @media (max-width: 1200px) {
+    width: 65%;
+  }
+
+  @media (max-width: 890px) {
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  background-image: url("../img/usage-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.delivery__card-content {
+  height: 100%;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 25px 1px #01c7f9bb;
+
+  @media (max-width: 450px) {
+    padding: 10px;
+  }
+
+  &--courier {
+    background-image: url("../img/sevastopol.png");
+    background-position: right -40px bottom 20px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 540px) {
+      background-image: none;
+      background-color: #ffffff ;
+    }
+  }
+
+  &--payment {
+    background-image: url("../img/registration.png");
+    background-position: right bottom 20px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 480px) {
+      background-position: right -60px bottom 20px;
+    }
+
+    @media (max-width: 355px) {
+      background-position: right -100px bottom 20px;
+    }
+  }
+}
+
+.delivery__list {
+  margin-left: 18px;
+
+  @media (max-width: 450px) {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+.delivery__card-content--payment ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.delivery__text {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  @media (max-width: 890px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 540px) {
+    width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.delivery__price {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: auto;
+
+  @media (max-width: 890px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

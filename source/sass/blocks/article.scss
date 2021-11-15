@@ -1,0 +1,132 @@
+.article {
+  padding-top: 150px;
+  padding-bottom: 70px;
+  color: #2d3a4d;
+  text-align: left;
+  background-color: #f4f7fc;
+
+  background-image: url("../img/bg-auto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 890px) {
+    padding-top: 210px;
+  }
+}
+
+.article__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @media (max-width: 890px) {
+    flex-direction: column;
+  }
+}
+
+.article__content {
+  width: 70%;
+
+  @media (max-width: 890px) {
+    width: 100%;
+  }
+}
+
+.article__caption {
+  font-size: 36px;
+  line-height: 150%;
+  font-weight: bold;
+  margin: 0;
+
+  @media (max-width: 890px) {
+    font-size: 30px;
+  }
+}
+
+.article__data {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #055ef3;
+  margin: 15px 0;
+}
+
+// .article__preview {
+//   width: 100%;
+//   margin-top: 30px;
+
+//   &--main {
+//     min-height: 500px;
+//     margin-top: 0;
+
+//     @media (max-width: 890px) {
+//       min-height: 250px;
+//     }
+//   }
+// }
+
+.article__main-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.article__text-wrapper img {
+  border-radius: 15px;
+
+  width: 100%;
+  margin-top: 30px;
+
+  &--main {
+    min-height: 500px;
+    margin-top: 0;
+
+    @media (max-width: 890px) {
+      min-height: 250px;
+    }
+  }
+}
+
+.article__text-wrapper h2 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.article__text-wrapper h3 {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+.article__text-wrapper p {
+  text-align: justify;
+  margin-bottom: calc(20px + 1em);
+}
+
+.article__text-wrapper {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  background-color: #ffffff;
+  margin-top: -1em;
+  border-radius: 0 0 10px 10px;
+  padding: 45px 50px 50px 40px;
+
+  @media (max-width: 890px) {
+    padding: 20px 15px 10px 15px;
+  }
+}
+
+.article__text-wrapper a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.article__text-wrapper ul {
+  padding-left: 25px;
+  list-style-position: inside;
+}
+
+.article__text-wrapper li {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,133 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  color: #2d3a4d;
+  text-align: left;
+
+  @media (max-width: 689px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.side-menu__section {
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 1px 15px 1px #01c7f962;
+
+  &--services {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1114px) {
+    padding: 20px 25px;
+  }
+
+  @media (max-width: 958px) {
+    padding: 10px 10px;
+  }
+}
+
+.side-menu__caption {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (max-width: 958px) {
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin-top: calc(1em - 10px);
+    margin-bottom: calc(1em - 10px);
+  }
+
+  @media (max-width: 689px) {
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-top: calc(1em - 10px);
+    margin-bottom: calc(1em - 10px);
+  }
+
+  &::after {
+    @include pseudo;
+    right: 0;
+    top: 6px;
+
+    border: solid #2d3a4d;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: 0.5s;
+  }
+
+  &::before {
+    @include pseudo;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #01c9f9;
+  }
+
+  &--on {
+    &::after {
+      transform: rotate(-135deg);
+    }
+  }
+
+  &--off {
+    &::after {
+      top: 4px;
+      transform: rotate(45deg);
+    }
+  }
+
+}
+
+.side-menu__list {
+  padding-left: 15px;
+
+  &--on {
+    display: block;
+  }
+
+  &--off {
+    display: none;
+  }
+}
+
+.side-menu__item {
+  font-size: 18px;
+  line-height: 55px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+
+  @media (max-width: 958px) {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+.side-menu__link {
+  transition: 0.5s;
+  color: #2d3a4d;
+  text-decoration: underline transparent;
+
+  &:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+  }
+}
+
+.side-menu__link--current,
+.side-menu__item--current {
+  color: #fe485e;
+  text-decoration: underline;
+}
+
