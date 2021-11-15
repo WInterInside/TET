@@ -13,6 +13,7 @@
 
 .side-menu__section {
   width: 100%;
+  min-width: 330px;
   border-radius: 15px;
   padding: 20px 50px;
   background-color: white;
@@ -23,11 +24,13 @@
   }
 
   @media (max-width: 1114px) {
+    min-width: 280px;
     padding: 20px 25px;
   }
 
   @media (max-width: 958px) {
-    padding: 10px 10px;
+    min-width: 222px;
+    padding: 10px 20px;
   }
 }
 
