@@ -361,6 +361,9 @@ img {
 .colored--blue {
   color: #055ef3; }
 
+.form-modal {
+  display: none; }
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff");

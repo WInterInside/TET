@@ -46,6 +46,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.9",
     "del": "^5.1.0",
     "imask": "^6.0.7",
     "jquery": "^3.6.0",
