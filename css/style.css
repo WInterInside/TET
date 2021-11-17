@@ -1206,6 +1206,51 @@ img {
         background-position: center center;
         background-repeat: no-repeat; } }
 
+.dropbtn {
+  border: none; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
+  z-index: 1; }
+
+.dropdown__content a {
+  color: #2d3a4d;
+  font-weight: 500;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.dropdown__content a:hover {
+  color: #ffffff;
+  background-color: #047df5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.dropdown:hover .dropdown__content {
+  display: block; }
+
+.dropdown:active .dropdown__content {
+  display: block; }
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
