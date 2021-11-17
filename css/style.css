@@ -1229,6 +1229,16 @@ img {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
   z-index: 1; }
+  @media (max-width: 699px) {
+    .dropdown__content {
+      right: -155%;
+      border-top-left-radius: 0;
+      text-align: center; } }
+  @media (max-width: 699px) {
+    .dropdown__content--catalog {
+      right: -130%;
+      border-top-left-radius: 0;
+      text-align: center; } }
 
 .dropdown__content a {
   color: #2d3a4d;

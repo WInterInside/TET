@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TET</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <script>
       // Picture element HTML5 shiv
@@ -35,7 +36,7 @@
               <li class="navigation__item">
                 <div class="dropdown">
                   <a class="dropbtn navigation__link navigation__link--services">Каталог</a>
-                  <div class="dropdown__content">
+                  <div class="dropdown__content dropdown__content--catalog">
                     <ul class="dropdown__list dropdown__list--catalog">
                       <li class="dropdown__item">
                         <a href="#" class="dropdown__link">Контрольно-кассовая техника</a>
@@ -119,7 +120,7 @@
               <a class="header__link header__link--messenger header__link--whatsapp" href="https://api.whatsapp.com/send/?phone=79780720155" target="_blank" rel="nofollow" title="Написать в WhatsApp"></a>
               <a class="header__link header__link--phone" href="tel:+7(978)0720155" rel="nofollow">+7 (978) 072-01-55</a>
             </div>
-            <a href="#" class="header__link btn btn--call">Заказать звонок</a>
+            <a href="#callback" class="header__link btn btn--call fancybox">Заказать звонок</a>
           </section>
         </div>
       </header>
@@ -382,7 +383,7 @@
                     <b>E-mail:</b><br>
                     242316@mail.ru
                   </a>
-                  <a href="#" rel="nofollow" class="footer__link btn btn--call btn--footer">Заказать звонок</a>
+                  <a href="#callback" class="footer__link btn btn--call btn--footer fancybox">Заказать звонок</a>
                 </div>
               </div>
             </div>
@@ -404,8 +405,31 @@
         </div>
       </section>
       </footer>
+      <div class="form-modal" id="callback">
+        <form class="form form--modal" action="https://echo.htmlacademy.ru" method="get">
+          <p class="form__caption form__caption--modal">Заказать обратный звонок</p>
+          <p class="form__subcaption form__subcaption--modal">Оставьте заявку и наш менеджер свяжется с вами и ответит на все вопросы в ближайшее время</p>
+          <div class="form__wrapper form__wrapper--modal">
+            <label class="form__label form__label--modal">
+              <input class="form__input form__input--modal" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+            </label>
+            <label class="form__label form__label--modal">
+              <input class="form__input form__input--modal form__input--tel" id="tel" type="tel" name="tel" placeholder="Номер телефона" required="">
+            </label>
+            <div class="form__wrapper form__wrapper--modal form__wrapper--agreement">
+              <input class="form__checkbox form__checkbox--modal" id="agreement" type="checkbox" name="agreement" checked>
+              <label class="form__label form__label--modal form__label--checkbox form__label--modal-checkbox" for="agreement">Согласие на обработку персональных данных</label>
+            </div>
+            <button class="btn btn--red btn--submit btn--modal" type="submit">Заказать обратный звонок</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="js/jquery.js"></script>
+    <script src="libs/fancybox/source/jquery.fancybox.js"></script>
+    <script>
+      $(".fancybox").fancybox();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

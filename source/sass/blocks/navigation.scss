@@ -224,6 +224,20 @@
   border-top-right-radius: 0;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
   z-index: 1;
+
+  @media (max-width: 699px) {
+    right: -155%;
+    border-top-left-radius: 0;
+    text-align: center;
+  }
+
+  &--catalog {
+    @media (max-width: 699px) {
+      right: -130%;
+      border-top-left-radius: 0;
+      text-align: center;
+    }
+  }
 }
 
 .dropdown__content a {
