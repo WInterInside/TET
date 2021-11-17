@@ -5,6 +5,13 @@
   color: #2d3a4d;
   text-align: left;
 
+  &--product-card {
+    @media (max-width: 780px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
   @media (max-width: 689px) {
     width: 100%;
     margin-bottom: 20px;

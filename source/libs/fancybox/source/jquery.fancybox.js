@@ -53,8 +53,8 @@
 		version: '2.1.7',
 
 		defaults: {
-			padding : 15,
-			margin  : 20,
+			padding : 0,
+			margin  : 0,
 
 			width     : 800,
 			height    : 600,
