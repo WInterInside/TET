@@ -109,6 +109,20 @@
 	z-index: 8040;
 }
 
+@media (max-width: 550px) {
+  .fancybox-close {
+    position: absolute;
+    top: -18px;
+    right: 20px;
+    width: 43px;
+    height: 43px;
+    background: linear-gradient(0deg, rgba(16,106,238,1) 46%, rgba(0,197,253,1) 89%);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 8040;
+  }
+}
+
 .fancybox-close::after {
   position: absolute;
   content: "";
